@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="mx-[140px]">
+        <header class="bg-white rounded-2xl">
+            <nav>
+                <div class="flex justify-between rounded-xl">
+                    <div class="flex items-center gap-1 my-2 mx-5">
+                        <img src="../A5-Dev-Board/assets/logo.png" alt="">
+                        <h1 class="text-2xl">Dev <span class="text-2xl font-bold">Board</span></h1>
+                    </div>
+    
+                    <di class="flex items-center">
+                        <button id="back" class="btn  bg-[#3752FD] text-white text-sm rounded-xl mr-5">Back to Desk</button>
+                    </di>
+                </div>
+            </nav>
+        </header>
+
+        <!-- blog section -->
+         <h1 class="text-center text-2xl font-bold my-5">Blogs</h1>
+
+         <!-- Q1 -->
+         <div class="bg-white p-3 text-2xl font-bold mb-2">
+            <h1>Question-1: What are the different ways to select an element in the DOM?
+            </h1>
+         </div>
+         <div class="bg-white p-3 text-gray-600 mb-10">
+            <p>
+                By ID: document.getElementById("myId")
+                By Class Name: document.getElementsByClassName("myClass")
+                By Tag Name: document.getElementsByTagName("p")
+                By CSS Selector: document.querySelector("#myId"), document.querySelectorAll(".myClass")
+            </p>
+         </div>
+
+         <!-- Q2 -->
+         <div class="bg-white p-3 text-2xl font-bold mb-2">
+            <h1>Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+            </h1>
+         </div>
+         <div class="bg-white p-3 text-gray-600 mb-10">
+            <p>
+                InnerHTML:  Retrieves or sets the entire HTML content of an element. <br>
+                InnerText: Retrieves or sets the text content of an element, excluding HTML <tags class="br"></tags>
+                TextContent: Similar to innerText, but retrieves all text content, including text within script and style tags.
+            </p>
+         </div>
+
+         <!-- Q3 -->
+         <div class="bg-white p-3 text-2xl font-bold mb-2">
+            <h1>Question-3: What is event delegation in the DOM?
+            </h1>
+         </div>
+         <div class="bg-white p-3 text-gray-600 mb-10">
+            <p>
+                Event delegation is a technique where you attach a single event listener to a parent element to handle events for all its current and future children. This is efficient for dynamically added elements.
+            </p>
+         </div>
+
+         <!-- Q4 -->
+         <div class="bg-white p-3 text-2xl font-bold mb-2">
+            <h1>Question-4: What is event bubbling in the DOM?
+            </h1>
+         </div>
+         <div class="bg-white p-3 text-gray-600 mb-10">
+            <p>
+                Event bubbling is the order in which events are handled in the DOM. When an event occurs on an element, it first triggers event handlers on that element, then on its parent, then its grandparent, and so on, up to the root of the document.
+
+            </p>
+         </div>
+
+          <!-- Q5 -->
+          <div class="bg-white p-3 text-2xl font-bold mb-2">
+            <h1>Question-5: How do you create, add, and remove elements using JavaScript?
+            </h1>
+         </div>
+         <div class="bg-white p-3 text-gray-600 mb-10">
+            <p>
+                 Create: Use document.createElement("elementName") <br>
+                 Add: Use methods like appendChild(), insertBefore(), or replaceChild() on the parent element. <br>
+                 Remove: Use removeChild() on the parent element.
+
+            </p>
+         </div>
+
+    </section>
+
+    <script>
+        document.getElementById('back')
+    .addEventListener('click', function(event){
+    event.preventDefault();
+    console.log('hy')
+    window.location.href="index.html"
+})
+    </script>
+    <script src="../Dev Board/js/dev.js"></script>
+</body>
+</html>
