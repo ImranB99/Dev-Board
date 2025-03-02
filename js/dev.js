@@ -15,6 +15,9 @@ let counter2 = 23;
 const counterElement = document.getElementById('counter');
 const counter2Element = document.getElementById('counter2');
 
+const active = document.getElementById('active');
+
+
 
 document.getElementById('button1')
 .addEventListener('click', function(event) {
@@ -25,6 +28,13 @@ document.getElementById('button1')
   counter2Element.innerText = counter2;
   event.target.disabled = true;
 
+
+   // Active loge
+   const newParagraph = document.createElement('p');
+   newParagraph.textContent = 'You have Complete The task fix mobile button issue at 12:48:15 PM';
+   active.appendChild(newParagraph);
+
+ 
 });
 
 document.getElementById('button2')
@@ -35,6 +45,12 @@ document.getElementById('button2')
   counterElement.innerText = counter;
   counter2Element.innerText = counter2;
   event.target.disabled = true;
+
+   // Active loge
+   const newParagraph = document.createElement('p');
+   newParagraph.textContent = 'You have Complete The Task Add Dark Mode at 12:48:15 PM';
+   active.appendChild(newParagraph);
+
 });
 
 document.getElementById('button3')
@@ -45,6 +61,12 @@ document.getElementById('button3')
   counterElement.innerText = counter;
   counter2Element.innerText = counter2;
   event.target.disabled = true;
+
+  // Active loge
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = 'You have Complete The Task Optimize Home page at 12:48:15 PM';
+  active.appendChild(newParagraph);
+  
 });
 
 document.getElementById('button4')
@@ -55,6 +77,11 @@ document.getElementById('button4')
   counterElement.innerText = counter;
   counter2Element.innerText = counter2;
   event.target.disabled = true;
+
+  // Active loge
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = 'You have Complete The Task Add New emoji at 12:48:15 PM';
+  active.appendChild(newParagraph);
 });
 
 document.getElementById('button5')
@@ -65,6 +92,11 @@ document.getElementById('button5')
   counterElement.innerText = counter;
   counter2Element.innerText = counter2;
   event.target.disabled = true;
+
+  // Active loge
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = 'You have Complete The Task Integrate OpenAI API at 12:48:15 PM';
+  active.appendChild(newParagraph);
 });
 
 document.getElementById('button6')
@@ -75,6 +107,11 @@ document.getElementById('button6')
   counterElement.innerText = counter;
   counter2Element.innerText = counter2;
   event.target.disabled = true;
+
+  // Active loge
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = 'You have Complete The Task Improve Job searching at 12:48:15 PM';
+  active.appendChild(newParagraph);
 });
 
 
